@@ -507,6 +507,20 @@ p {
     font-size: 1.5rem;
     color: var(--color-primary);
     margin-bottom: 1rem;
+    background-color: #e6f2ff;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.highlight-item:hover i {
+    background-color: var(--color-primary);
+    color: white;
+    transform: scale(1.1);
 }
 
 .highlight-item h4 {
