@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Kami - Dinamika Solusi Informatika</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" style="display: flex; align-items: center; gap: 10px;">
+                <img src="assets/logoa.jpeg" alt="Dinamika SI Logo" style="width: 32px; height: 32px;">
+                <span style="font-family: 'Segoe UI', Arial, sans-serif; font-size: 1.6rem; font-weight: 700; color: #262626; letter-spacing: 0.5px;">Dinamika SI</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">Tentang Kami</a>
+                </li>
+                <li class="nav-item">
+                    <a href="service-detail.html" class="nav-link">Produk Kami</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#clients" class="nav-link">Klien</a>
+                </li>
+                <li class="nav-item">
+                    <a href="news-detail.html" class="nav-link">Berita</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Kontak</a>
+                </li>
+            </ul>
+            <div class="nav-right">
+                <a href="tel:+62215700135" class="nav-link"><i class="fas fa-phone"></i> +62-21-5700135</a>
+                <a href="mailto:marketing@dinamika-si.com" class="nav-link"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="contact-header">
+        <div class="container">
+            <div class="contact-header-content">
+                <h1>Hubungi Kami</h1>
+                <p>Tim konsultan berpengalaman kami siap membantu mewujudkan transformasi digital untuk bisnis Anda. Hubungi kami untuk konsultasi dan informasi lebih lanjut.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Grid Section -->
+    <section class="contact-grid">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Informasi Kontak</h2>
+                    <p>Hubungi kami untuk konsultasi dan informasi lebih lanjut tentang solusi teknologi untuk bisnis Anda.</p>
+                    <div class="info-items">
+                        <div class="info-item">
+                            <i class="fas fa-building"></i>
+                            <div class="info-content">
+                                <h3>Head Office</h3>
+                                <p>Wisma Nugra Santana, 2nd Floor<br>
+                                Jl. Jend. Sudirman Kav. 7-8<br>
+                                Jakarta Pusat 10220<br>
+                                Indonesia</p>
+                                <div class="contact-details">
+                                    <p><i class="fas fa-phone"></i> (+62) 21-5700135</p>
+                                    <p><i class="fas fa-user"></i> Calvin: (+62) 818-0867-8822</p>
+                                    <p><i class="fas fa-user"></i> Erniyana: (+62) 818-570-013</p>
+                                    <p><i class="fas fa-envelope"></i> marketing@dinamika-si.com</p>
+                                    <p><i class="fas fa-globe"></i> www.dinamika-si.com</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-building"></i>
+                            <div class="info-content">
+                                <h3>Branch Office</h3>
+                                <p>Intiland Tower Office Suite, Level 3<br>
+                                Jl. Panglima Sudirman Kav. 101-103<br>
+                                Surabaya Pusat 60271<br>
+                                Indonesia</p>
+                                <div class="contact-details">
+                                    <p><i class="fas fa-phone"></i> (+62) 31-60038321</p>
+                                    <p><i class="fas fa-user"></i> Dominic: (+62) 818-11-2280</p>
+                                    <p><i class="fas fa-envelope"></i> marketing@dinamika-si.com</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                   
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2>Kirim Pesan</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Nama Perusahaan</label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Nomor Telepon</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Layanan yang Diminati</label>
+                            <select id="service" name="service" required>
+                                <option value="">Pilih Layanan</option>
+                                <option value="dynamics365">Microsoft Dynamics 365</option>
+                                <option value="powerbi">Power BI</option>
+                                <option value="azure">Azure Cloud Services</option>
+                                <option value="consulting">Konsultasi IT</option>
+                                <option value="other">Lainnya</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-button">
+                            <span>Kirim Pesan</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Lokasi Kami</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2834256722337!2d106.8307813!3d-6.2217662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3f03383c089%3A0x91c1e9c1c6c5d192!2sCyber%202%20Tower!5e0!3m2!1sen!2sid!4v1234567890"
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Produk</h4>
+                    <ul>
+                        <li><a href="#">Dynamics 365 F&O</a></li>
+                        <li><a href="#">Business Central</a></li>
+                        <li><a href="#">Power BI</a></li>
+                        <li><a href="#">Dynamics 365 Sales</a></li>
+                        <li><a href="#">Dynamics 365 Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Layanan</h4>
+                    <ul>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">Field Service</a></li>
+                        <li><a href="#">Commerce</a></li>
+                        <li><a href="#">HR & Payroll</a></li>
+                        <li><a href="#">Business Intelligence</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Perusahaan</h4>
+                    <ul>
+                        <li><a href="#">Tentang Kami</a></li>
+                        <li><a href="#">Klien Kami</a></li>
+                        <li><a href="#">Berita Terbaru</a></li>
+                        <li><a href="#">Karir</a></li>
+                        <li><a href="#">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Mitra</h4>
+                    <ul>
+                        <li><a href="#">Microsoft</a></li>
+                        <li><a href="#">Hitachi</a></li>
+                        <li><a href="#">NTT Communications</a></li>
+                        <li><a href="#">NS Solutions</a></li>
+                        <li><a href="#">Sakura System</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>© 2024 PT Dinamika Solusi Informatika. Semua hak dilindungi.</p>
+                </div>
+                <div class="footer-bottom-right">
+                    <a href="#">Privasi</a>
+                    <a href="#">Syarat Penggunaan</a>
+                    <a href="#">Peta Situs</a>
+                    <a href="#">Hubungi Kami</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

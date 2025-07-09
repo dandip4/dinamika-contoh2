@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
 }
@@ -32,7 +32,7 @@ body {
 }
 
 .nav-container {
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
     display: flex;
@@ -117,12 +117,7 @@ body {
     width: 100%;
     height: 100%;
     background: linear-gradient(135deg, #003366 0%, #004080 20%, #0067b8 40%, #0078d4 60%, #106ebe 80%, #005da6 100%);
-    background-image: 
-        radial-gradient(circle at 20% 80%, rgba(0, 120, 212, 0.8) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(0, 103, 184, 0.7) 0%, transparent 50%),
-        radial-gradient(circle at 40% 40%, rgba(16, 110, 190, 0.6) 0%, transparent 50%),
-        radial-gradient(circle at 60% 60%, rgba(0, 78, 140, 0.5) 0%, transparent 50%),
-        radial-gradient(circle at 10% 50%, rgba(0, 51, 102, 0.4) 0%, transparent 50%);
+  
     z-index: -2;
 }
 
@@ -138,7 +133,7 @@ body {
 }
 
 .hero-container {
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
     display: grid;
@@ -314,7 +309,7 @@ body {
 
 .icon-3 {
     top: 28%;
-    left: 70%;
+    left: 64%;
     transform: none;
     animation-delay: 2s;
     background: linear-gradient(135deg, #45b7d1, #96c93d);
@@ -359,7 +354,7 @@ body {
 
 .icon-8 {
     top: 40%;
-    left: 25%;
+    left: 20%;
     transform: none;
     animation-delay: 4.5s;
     background: linear-gradient(135deg, #2196f3, #00c6fb);
@@ -492,6 +487,48 @@ body {
 .product-link:hover {
     gap: 1rem;
 }
+
+
+
+.cta {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #0078d4 0%, #004578 100%);
+    color: white;
+}
+
+.cta-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: white;
+    color: #0078d4;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 
 /* Teams Section */
 .teams-section {
@@ -774,8 +811,7 @@ body {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .product-grid,
-    .about-features {
+    .product-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
     
@@ -878,24 +914,32 @@ body {
         display: none;
     }
 
-    .about-text h3 {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+    
+    .about-text h2 {
         font-size: 2rem;
     }
-
-    .about-stats {
-        flex-direction: column;
-        align-items: center;
+    
+    .about-highlights {
+        max-width: 500px;
+        margin: 0 auto;
     }
-
-    .stat-item {
-        min-width: auto;
-        width: 100%;
-        max-width: 200px;
+    
+    .highlight-item {
+        text-align: left;
     }
-
-    .about-image {
-        width: 450px;
-        height: 270px;
+    
+    .microsoft-showcase {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .showcase-stats {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .product-grid {
@@ -927,20 +971,26 @@ body {
         font-size: 1.3rem;
     }
 
-    .contact-grid {
+    .contact-content {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 
-    .teams-content,
-    .windows-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        text-align: center;
+    .partners-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
-    .teams-visual i,
-    .windows-visual i {
-        font-size: 6rem;
+    .clients-track {
+        gap: 1rem;
+    }
+
+    .client-slide {
+        min-width: 180px;
+        padding: 1rem;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
     }
 
     .footer-content {
@@ -958,8 +1008,7 @@ body {
         display: none;
     }
 
-    .hero-container,
-    .about-main {
+    .hero-container {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
@@ -989,7 +1038,7 @@ body {
         display: none;
     }
 
-    .about-text h3 {
+    .about-text h2 {
         font-size: 1.8rem;
     }
 
@@ -997,25 +1046,51 @@ body {
         font-size: 1rem;
     }
 
-    .stat-item {
+    .highlight-item {
+        gap: 0.8rem;
+    }
+
+    .highlight-item i {
+        width: 20px;
+        height: 20px;
+        font-size: 0.7rem;
+    }
+
+    .highlight-item h4 {
+        font-size: 1rem;
+    }
+
+    .highlight-item p {
+        font-size: 0.9rem;
+    }
+
+    .microsoft-logo {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+    }
+
+    .showcase-main h3 {
+        font-size: 1.3rem;
+    }
+
+    .showcase-main p {
+        font-size: 0.9rem;
+    }
+
+    .stat {
         padding: 0.8rem;
     }
 
     .stat-number {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .stat-label {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
 
-    .about-image {
-        width: 400px;
-        height: 240px;
-    }
-
-    .product-grid,
-    .about-features {
+    .product-grid {
         grid-template-columns: 1fr;
     }
 
@@ -1089,110 +1164,31 @@ body {
 }
 
 @media (max-width: 600px) {
-    .container {
-        padding: 0 16px;
+    .hero {
+        padding-top: 32px;
+        padding-bottom: 24px;
+        min-height: unset;
     }
-
-    .hero-title {
-        font-size: 1.8rem;
+    .hero-container {
+        gap: 1.2rem;
+        padding: 0 8px;
     }
-
-    .section-header h2 {
-        font-size: 1.8rem;
+    .hero-content {
+        padding-bottom: 0.5rem;
     }
-
-    .btn {
-        padding: 10px 20px;
-        font-size: 13px;
+    .main-laptop {
+        width: 120px;
+        height: 120px;
+        margin: 1.2rem auto 0.5rem auto;
     }
-
-    .about-text h3 {
-        font-size: 1.5rem;
+    .main-laptop i {
+        font-size: 2.2rem;
     }
-
-    .about-text p {
-        font-size: 0.9rem;
-    }
-
-    .stat-item {
-        padding: 0.8rem;
-    }
-
-    .stat-number {
-        font-size: 1.8rem;
-    }
-
-    .stat-label {
-        font-size: 0.7rem;
-    }
-
-    .about-image {
-        width: 350px;
-        height: 210px;
-    }
-
-    .product-card,
-    .feature-item,
-    .client-slide {
-        padding: 1.5rem;
-    }
-
-    .product-card h3,
-    .feature-item h4 {
-        font-size: 1.1rem;
-    }
-
-    .client-slide h4 {
+    .main-laptop p {
         font-size: 1rem;
     }
-
-    .news-card .news-image {
-        height: 100px;
-    }
-
-    .news-card .news-content {
-        padding: 1rem;
-    }
-
-    .news-card h3 {
-        font-size: 1rem;
-    }
-
-    .news-meta {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .contact-item {
-        padding: 1rem;
-    }
-
-    .contact-form {
-        padding: 1.5rem;
-    }
-
-    .contact-icon {
-        width: 40px;
-        height: 40px;
-        font-size: 1rem;
-    }
-
-    .contact-details h4 {
-        font-size: 1rem;
-    }
-
-    .contact-details p {
-        font-size: 0.8rem;
-    }
-
-    .carousel-controls {
-        margin-top: 1rem;
-    }
-
-    .carousel-btn {
-        width: 40px;
-        height: 40px;
-        font-size: 1rem;
+    .hero-buttons {
+        margin-bottom: 0.5rem;
     }
 }
 
@@ -1213,7 +1209,7 @@ body {
         font-size: 1.5rem;
     }
 
-    .about-text h3 {
+    .about-text h2 {
         font-size: 1.3rem;
     }
 
@@ -1221,36 +1217,71 @@ body {
         font-size: 0.85rem;
     }
 
-    .stat-item {
-        padding: 0.6rem;
+    .highlight-item {
+        gap: 0.5rem;
     }
 
-    .stat-number {
+    .highlight-item i {
+        width: 16px;
+        height: 16px;
+        font-size: 0.5rem;
+    }
+
+    .highlight-item h4 {
+        font-size: 0.8rem;
+    }
+
+    .highlight-item p {
+        font-size: 0.75rem;
+    }
+
+    .microsoft-logo {
+        width: 40px;
+        height: 40px;
         font-size: 1.5rem;
     }
 
-    .stat-label {
-        font-size: 0.65rem;
+    .showcase-main h3 {
+        font-size: 1rem;
     }
 
-    .about-image {
-        width: 300px;
-        height: 180px;
+    .showcase-main p {
+        font-size: 0.75rem;
+    }
+
+    .showcase-stats {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .stat {
+        padding: 0.5rem;
+    }
+
+    .stat-number {
+        font-size: 1.2rem;
+    }
+
+    .stat-label {
+        font-size: 0.6rem;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
     }
 
     .product-card,
-    .feature-item,
     .client-slide {
         padding: 1rem;
     }
 
-    .product-card h3,
-    .feature-item h4 {
+    .product-card h3 {
         font-size: 1rem;
     }
 
-    .product-card p,
-    .feature-item p {
+    .product-card p {
         font-size: 0.85rem;
     }
 
@@ -1283,7 +1314,7 @@ body {
         font-size: 0.7rem;
     }
 
-    .contact-card {
+    .contact-item {
         padding: 0.8rem;
     }
 
@@ -1301,10 +1332,47 @@ body {
         font-size: 0.8rem;
     }
 
+    .contact-form {
+        padding: 1rem;
+    }
+
     .carousel-btn {
         width: 35px;
         height: 35px;
         font-size: 0.9rem;
+    }
+
+    .showcase-stats {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .microsoft-logo {
+        width: 35px;
+        height: 35px;
+        font-size: 1.3rem;
+    }
+    
+    .showcase-main h3 {
+        font-size: 0.9rem;
+    }
+    
+    .showcase-main p {
+        font-size: 0.7rem;
+    }
+    
+    .stat {
+        padding: 0.4rem;
+    }
+    
+    .stat-number {
+        font-size: 1rem;
+    }
+    
+    .stat-label {
+        font-size: 0.55rem;
     }
 }
 
@@ -1719,21 +1787,38 @@ html {
 /* About Section */
 .about-section {
     padding: 80px 0;
-    background: #f8f9fa;
+    background: #fff;
 }
 
 .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    gap: 6rem;
     align-items: center;
-    margin-top: 3rem;
 }
 
-.about-text h3 {
+/* Microsoft Partner Badge */
+.microsoft-partner-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #0078d4;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.microsoft-partner-badge i {
+    font-size: 1.1rem;
+}
+
+.about-text h2 {
     font-size: 2.5rem;
-    font-weight: 700;
-    color: #262626;
+    font-weight: 600;
+    color: #000;
     margin-bottom: 1.5rem;
     line-height: 1.2;
 }
@@ -1741,72 +1826,146 @@ html {
 .about-text p {
     font-size: 1.1rem;
     color: #666;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     line-height: 1.6;
 }
 
-.about-stats {
+/* About Highlights */
+.about-highlights {
     display: flex;
-    gap: 2rem;
-    margin-top: 2rem;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-.stat-item {
-    text-align: center;
+.highlight-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
 }
 
-.stat-number {
-    display: block;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #0067b8;
-    line-height: 1;
+.highlight-item i {
+    width: 24px;
+    height: 24px;
+    background: #0078d4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
 }
 
-.stat-label {
-    display: block;
-    font-size: 0.9rem;
+.highlight-item h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 0.3rem;
+}
+
+.highlight-item p {
+    font-size: 0.95rem;
     color: #666;
-    margin-top: 0.5rem;
-    font-weight: 500;
+    margin: 0;
+    line-height: 1.5;
 }
 
+/* Microsoft Showcase */
 .about-visual {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.about-image {
-    width: 500px;
-    height: 300px;
-    border-radius: 8px;
-    overflow: hidden;
+.microsoft-showcase {
+    width: 100%;
+    max-width: 450px;
 }
 
-.about-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.showcase-main {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.microsoft-logo {
+    width: 80px;
+    height: 80px;
+    background: #0078d4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.showcase-main h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 0.8rem;
+}
+
+.showcase-main p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.showcase-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.stat {
+    text-align: center;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e1e1e1;
+}
+
+.stat-number {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0078d4;
+    line-height: 1;
+    margin-bottom: 0.3rem;
+}
+
+.stat-label {
+    display: block;
+    font-size: 0.8rem;
+    color: #666;
+    font-weight: 500;
+    line-height: 1.3;
 }
 
 /* Product Showcase */
 .product-showcase-section {
     padding: 80px 0;
-    background: white;
+    background: linear-gradient(120deg, #e3f0fa 0%, #f8fafd 80%, #fff 100%);
 }
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .product-card {
     background: white;
     padding: 2rem;
-    border-radius: 12px;
+    border-radius: 0;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #e9ecef;
@@ -2014,7 +2173,7 @@ html {
 /* News Section */
 .news-section {
     padding: 80px 0;
-    background: white;
+    background: linear-gradient(135deg, #f8fafd 0%, #e3f0fa 100%);
 }
 
 .news-grid {
@@ -2254,4 +2413,91 @@ html {
 .partner-card p {
     color: #666;
     font-size: 0.9rem;
+} 
+
+@media (max-width: 600px) {
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 4vw;
+    gap: 1.5rem;
+  }
+  .about-text, .about-visual {
+    width: 100%;
+  }
+  .about-text {
+    margin-bottom: 1.5rem;
+  }
+} 
+
+@media (max-width: 600px) {
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 0 8px;
+  }
+  .hero-content {
+    order: 1;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0.5rem;
+  }
+  .hero-visual {
+    order: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .main-laptop {
+    margin: 0.5rem auto 0 auto;
+  }
+} 
+
+@media (max-width: 600px) {
+  .hero-title {
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+  }
+  .main-laptop {
+    width: 170px;
+    height: 170px;
+    margin: 1.2rem auto 0 auto;
+  }
+  .main-laptop i {
+    font-size: 3rem;
+  }
+  .main-laptop p {
+    font-size: 1.1rem;
+  }
+} 
+
+/* Contact Button White Variant */
+.btn-contact-white {
+    background-color: #ffffff;
+    color: #0078d4;
+    border: 2px solid #ffffff;
+    padding: 12px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-contact-white:hover {
+    background-color: transparent;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.btn-contact-white i {
+    font-size: 1.1rem;
 } 
