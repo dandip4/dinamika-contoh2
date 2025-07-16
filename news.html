@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Berita & Artikel - Dinamika Solusi Informatika</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="news.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div
+          class="nav-logo"
+          style="display: flex; align-items: center; gap: 10px"
+        >
+          <img
+            src="assets/logoa.jpeg"
+            alt="Dinamika SI Logo"
+            style="width: 32px; height: 32px"
+          />
+          <span
+            style="
+              font-family: 'Segoe UI', Arial, sans-serif;
+              font-size: 1.6rem;
+              font-weight: 700;
+              color: #262626;
+              letter-spacing: 0.5px;
+            "
+            >Dinamika SI</span
+          >
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">Tentang Kami</a>
+          </li>
+          <li class="nav-item">
+            <a href="service-detail.html" class="nav-link">Produk Kami</a>
+          </li>
+          <li class="nav-item">
+            <a href="#clients" class="nav-link">Klien</a>
+          </li>
+          <li class="nav-item">
+            <a href="news.html" class="nav-link active">Berita</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Kontak</a>
+          </li>
+        </ul>
+        <div class="nav-right">
+          <a href="tel:+62215700135" class="nav-link"
+            ><i class="fas fa-phone"></i> +62-21-5700135</a
+          >
+          <a href="mailto:marketing@dinamika-si.com" class="nav-link"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="news-header">
+      <div class="container">
+        <div class="news-header-content">
+          <h1>Berita & Artikel</h1>
+          <p>
+            Dapatkan informasi terbaru seputar teknologi Microsoft, tips
+            implementasi, dan insight industri dari tim ahli kami untuk
+            mendukung transformasi digital bisnis Anda.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+      <div class="container">
+        <div class="filter-wrapper">
+          <div class="filter-tabs">
+            <button class="filter-tab active" data-category="all">Semua</button>
+            <button class="filter-tab" data-category="microsoft365">
+              Microsoft 365
+            </button>
+            <button class="filter-tab" data-category="dynamics365">
+              Dynamics 365
+            </button>
+            <button class="filter-tab" data-category="powerbi">Power BI</button>
+            <button class="filter-tab" data-category="azure">
+              Azure Cloud
+            </button>
+            <button class="filter-tab" data-category="bi">
+              Business Intelligence
+            </button>
+          </div>
+          <div class="filter-search">
+            <input
+              type="text"
+              placeholder="Cari berita..."
+              class="search-input"
+            />
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="news-main">
+      <div class="container">
+        <div class="news-layout">
+          <!-- News List -->
+          <section class="news-list">
+            <!-- News Item 1 -->
+            <article class="news-item">
+              <div class="news-item-image">
+                <img
+                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                  alt="Microsoft 365 Business Premium"
+                />
+                <div class="news-category">Microsoft 365</div>
+              </div>
+              <div class="news-item-content">
+                <div class="news-meta">
+                  <span class="news-date"
+                    ><i class="far fa-calendar"></i> 15 Desember 2024</span
+                  >
+                  <span class="news-author"
+                    ><i class="far fa-user"></i> Admin</span
+                  >
+                  <span class="news-views"
+                    ><i class="far fa-eye"></i> 1,234 views</span
+                  >
+                </div>
+                <h2>
+                  <a href="news-detail.html"
+                    >Microsoft 365 Business Premium: Solusi Lengkap untuk Bisnis
+                    Modern</a
+                  >
+                </h2>
+                <p>
+                  Microsoft 365 Business Premium menghadirkan solusi lengkap
+                  yang menggabungkan produktivitas, keamanan, dan kolaborasi
+                  dalam satu paket yang mudah dikelola untuk bisnis kecil dan
+                  menengah.
+                </p>
+                <div class="news-tags">
+                  <span class="tag">Microsoft 365</span>
+                  <span class="tag">Business Premium</span>
+                  <span class="tag">Produktivitas</span>
+                </div>
+                <a href="news-detail.html" class="read-more"
+                  >Baca Selengkapnya <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </article>
+
+            <!-- News Item 2 -->
+            <article class="news-item">
+              <div class="news-item-image">
+                <img
+                  src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                  alt="Dynamics 365"
+                />
+                <div class="news-category">Dynamics 365</div>
+              </div>
+              <div class="news-item-content">
+                <div class="news-meta">
+                  <span class="news-date"
+                    ><i class="far fa-calendar"></i> 12 Desember 2024</span
+                  >
+                  <span class="news-author"
+                    ><i class="far fa-user"></i> Admin</span
+                  >
+                  <span class="news-views"
+                    ><i class="far fa-eye"></i> 987 views</span
+                  >
+                </div>
+                <h2>
+                  <a href="news-detail.html"
+                    >Implementasi Dynamics 365: Panduan Lengkap untuk
+                    Perusahaan</a
+                  >
+                </h2>
+                <p>
+                  Pelajari langkah-langkah implementasi Microsoft Dynamics 365
+                  yang efektif untuk mengoptimalkan proses bisnis perusahaan
+                  Anda dengan panduan step-by-step dari tim ahli kami.
+                </p>
+                <div class="news-tags">
+                  <span class="tag">Dynamics 365</span>
+                  <span class="tag">Implementasi</span>
+                  <span class="tag">ERP</span>
+                </div>
+                <a href="news-detail.html" class="read-more"
+                  >Baca Selengkapnya <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </article>
+
+            <!-- News Item 3 -->
+            <article class="news-item">
+              <div class="news-item-image">
+                <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                  alt="Power BI"
+                />
+                <div class="news-category">Power BI</div>
+              </div>
+              <div class="news-item-content">
+                <div class="news-meta">
+                  <span class="news-date"
+                    ><i class="far fa-calendar"></i> 10 Desember 2024</span
+                  >
+                  <span class="news-author"
+                    ><i class="far fa-user"></i> Admin</span
+                  >
+                  <span class="news-views"
+                    ><i class="far fa-eye"></i> 756 views</span
+                  >
+                </div>
+                <h2>
+                  <a href="news-detail.html"
+                    >Power BI: Transformasi Data Menjadi Insight Berharga</a
+                  >
+                </h2>
+                <p>
+                  Bagaimana Power BI membantu perusahaan mengubah data mentah
+                  menjadi visualisasi yang informatif untuk pengambilan
+                  keputusan yang lebih baik dan strategis.
+                </p>
+                <div class="news-tags">
+                  <span class="tag">Power BI</span>
+                  <span class="tag">Data Visualization</span>
+                  <span class="tag">Analytics</span>
+                </div>
+                <a href="news-detail.html" class="read-more"
+                  >Baca Selengkapnya <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </article>
+
+            <!-- News Item 4 -->
+            <article class="news-item">
+              <div class="news-item-image">
+                <img
+                  src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                  alt="Azure Cloud"
+                />
+                <div class="news-category">Azure Cloud</div>
+              </div>
+              <div class="news-item-content">
+                <div class="news-meta">
+                  <span class="news-date"
+                    ><i class="far fa-calendar"></i> 8 Desember 2024</span
+                  >
+                  <span class="news-author"
+                    ><i class="far fa-user"></i> Admin</span
+                  >
+                  <span class="news-views"
+                    ><i class="far fa-eye"></i> 654 views</span
+                  >
+                </div>
+                <h2>
+                  <a href="news-detail.html"
+                    >Migrasi ke Azure Cloud: Strategi dan Best Practices</a
+                  >
+                </h2>
+                <p>
+                  Panduan lengkap untuk migrasi infrastruktur IT ke Microsoft
+                  Azure Cloud dengan strategi yang tepat dan best practices
+                  untuk memastikan transisi yang smooth.
+                </p>
+                <div class="news-tags">
+                  <span class="tag">Azure</span>
+                  <span class="tag">Cloud Migration</span>
+                  <span class="tag">Best Practices</span>
+                </div>
+                <a href="news-detail.html" class="read-more"
+                  >Baca Selengkapnya <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </article>
+
+            <!-- News Item 5 -->
+            <article class="news-item">
+              <div class="news-item-image">
+                <img
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                  alt="Business Intelligence"
+                />
+                <div class="news-category">Business Intelligence</div>
+              </div>
+              <div class="news-item-content">
+                <div class="news-meta">
+                  <span class="news-date"
+                    ><i class="far fa-calendar"></i> 5 Desember 2024</span
+                  >
+                  <span class="news-author"
+                    ><i class="far fa-user"></i> Admin</span
+                  >
+                  <span class="news-views"
+                    ><i class="far fa-eye"></i> 543 views</span
+                  >
+                </div>
+                <h2>
+                  <a href="news-detail.html"
+                    >Business Intelligence: Kunci Sukses Transformasi Digital</a
+                  >
+                </h2>
+                <p>
+                  Peran Business Intelligence dalam mendukung transformasi
+                  digital dan memberikan competitive advantage bagi perusahaan
+                  di era modern.
+                </p>
+                <div class="news-tags">
+                  <span class="tag">Business Intelligence</span>
+                  <span class="tag">Digital Transformation</span>
+                  <span class="tag">Analytics</span>
+                </div>
+                <a href="news-detail.html" class="read-more"
+                  >Baca Selengkapnya <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </article>
+
+            <!-- News Item 6 -->
+            <article class="news-item">
+              <div class="news-item-image">
+                <img
+                  src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                  alt="CRM"
+                />
+                <div class="news-category">CRM</div>
+              </div>
+              <div class="news-item-content">
+                <div class="news-meta">
+                  <span class="news-date"
+                    ><i class="far fa-calendar"></i> 3 Desember 2024</span
+                  >
+                  <span class="news-author"
+                    ><i class="far fa-user"></i> Admin</span
+                  >
+                  <span class="news-views"
+                    ><i class="far fa-eye"></i> 432 views</span
+                  >
+                </div>
+                <h2>
+                  <a href="news-detail.html"
+                    >Dynamics 365 CRM: Meningkatkan Customer Experience</a
+                  >
+                </h2>
+                <p>
+                  Bagaimana Dynamics 365 CRM membantu perusahaan meningkatkan
+                  customer experience dan retention rate melalui manajemen
+                  hubungan pelanggan yang efektif.
+                </p>
+                <div class="news-tags">
+                  <span class="tag">CRM</span>
+                  <span class="tag">Customer Experience</span>
+                  <span class="tag">Dynamics 365</span>
+                </div>
+                <a href="news-detail.html" class="read-more"
+                  >Baca Selengkapnya <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </article>
+
+            <!-- News Item 7 -->
+            <article class="news-item">
+              <div class="news-item-image">
+                <img
+                  src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                  alt="ERP"
+                />
+                <div class="news-category">ERP</div>
+              </div>
+              <div class="news-item-content">
+                <div class="news-meta">
+                  <span class="news-date"
+                    ><i class="far fa-calendar"></i> 1 Desember 2024</span
+                  >
+                  <span class="news-author"
+                    ><i class="far fa-user"></i> Admin</span
+                  >
+                  <span class="news-views"
+                    ><i class="far fa-eye"></i> 321 views</span
+                  >
+                </div>
+                <h2>
+                  <a href="news-detail.html"
+                    >ERP Modern: Mengoptimalkan Operasional Bisnis</a
+                  >
+                </h2>
+                <p>
+                  Peran ERP modern dalam mengoptimalkan operasional bisnis dan
+                  meningkatkan efisiensi perusahaan melalui integrasi sistem
+                  yang terpusat.
+                </p>
+                <div class="news-tags">
+                  <span class="tag">ERP</span>
+                  <span class="tag">Operational Excellence</span>
+                  <span class="tag">Business Process</span>
+                </div>
+                <a href="news-detail.html" class="read-more"
+                  >Baca Selengkapnya <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </article>
+
+            <!-- News Item 8 -->
+            <article class="news-item">
+              <div class="news-item-image">
+                <img
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                  alt="Data Analytics"
+                />
+                <div class="news-category">Data Analytics</div>
+              </div>
+              <div class="news-item-content">
+                <div class="news-meta">
+                  <span class="news-date"
+                    ><i class="far fa-calendar"></i> 28 November 2024</span
+                  >
+                  <span class="news-author"
+                    ><i class="far fa-user"></i> Admin</span
+                  >
+                  <span class="news-views"
+                    ><i class="far fa-eye"></i> 298 views</span
+                  >
+                </div>
+                <h2>
+                  <a href="news-detail.html"
+                    >Data Analytics: Mengubah Data Menjadi Keputusan
+                    Strategis</a
+                  >
+                </h2>
+                <p>
+                  Strategi implementasi data analytics untuk mengubah data
+                  mentah menjadi insight yang dapat dijadikan dasar pengambilan
+                  keputusan strategis perusahaan.
+                </p>
+                <div class="news-tags">
+                  <span class="tag">Data Analytics</span>
+                  <span class="tag">Strategic Decision</span>
+                  <span class="tag">Business Intelligence</span>
+                </div>
+                <a href="news-detail.html" class="read-more"
+                  >Baca Selengkapnya <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </article>
+
+            <!-- Pagination -->
+            <div class="pagination">
+              <a href="#" class="page-link active">1</a>
+              <a href="#" class="page-link">2</a>
+              <a href="#" class="page-link">3</a>
+              <a href="#" class="page-link">4</a>
+              <a href="#" class="page-link">5</a>
+              <a href="#" class="page-link next">
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+          </section>
+
+          <!-- Sidebar -->
+          <aside class="news-sidebar">
+            <!-- Categories Widget -->
+            <div class="sidebar-widget categories-widget">
+              <h4>Kategori</h4>
+              <ul class="categories-list">
+                <li>
+                  <a href="#" class="category-link active"
+                    >Semua <span class="category-count">(50)</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="category-link"
+                    >Microsoft 365 <span class="category-count">(12)</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="category-link"
+                    >Dynamics 365 <span class="category-count">(15)</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="category-link"
+                    >Power BI <span class="category-count">(8)</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="category-link"
+                    >Azure Cloud <span class="category-count">(10)</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="category-link"
+                    >Business Intelligence
+                    <span class="category-count">(6)</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="category-link"
+                    >CRM <span class="category-count">(9)</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="category-link"
+                    >ERP <span class="category-count">(11)</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="category-link"
+                    >Data Analytics <span class="category-count">(7)</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="category-link"
+                    >Tips & Tricks <span class="category-count">(5)</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Popular Posts Widget -->
+            <div class="sidebar-widget popular-posts-widget">
+              <h4>Berita Populer</h4>
+              <div class="popular-posts-list">
+                <article class="popular-post-item">
+                  <div class="popular-post-image">
+                    <img
+                      src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                      alt="Popular Post 1"
+                    />
+                  </div>
+                  <div class="popular-post-content">
+                    <h5>
+                      <a href="#"
+                        >Microsoft 365 Business Premium: Solusi Lengkap untuk
+                        Bisnis Modern</a
+                      >
+                    </h5>
+                    <span class="popular-post-views">1,234 views</span>
+                  </div>
+                </article>
+
+                <article class="popular-post-item">
+                  <div class="popular-post-image">
+                    <img
+                      src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                      alt="Popular Post 2"
+                    />
+                  </div>
+                  <div class="popular-post-content">
+                    <h5>
+                      <a href="#"
+                        >Implementasi Dynamics 365: Panduan Lengkap untuk
+                        Perusahaan</a
+                      >
+                    </h5>
+                    <span class="popular-post-views">987 views</span>
+                  </div>
+                </article>
+
+                <article class="popular-post-item">
+                  <div class="popular-post-image">
+                    <img
+                      src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                      alt="Popular Post 3"
+                    />
+                  </div>
+                  <div class="popular-post-content">
+                    <h5>
+                      <a href="#"
+                        >Power BI: Transformasi Data Menjadi Insight Berharga</a
+                      >
+                    </h5>
+                    <span class="popular-post-views">756 views</span>
+                  </div>
+                </article>
+
+                <article class="popular-post-item">
+                  <div class="popular-post-image">
+                    <img
+                      src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                      alt="Popular Post 4"
+                    />
+                  </div>
+                  <div class="popular-post-content">
+                    <h5>
+                      <a href="#"
+                        >Migrasi ke Azure Cloud: Strategi dan Best Practices</a
+                      >
+                    </h5>
+                    <span class="popular-post-views">654 views</span>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <!-- Tags Widget -->
+            <div class="sidebar-widget tags-widget">
+              <h4>Tag Populer</h4>
+              <div class="tags-list">
+                <a href="#" class="tag">Microsoft 365</a>
+                <a href="#" class="tag">Dynamics 365</a>
+                <a href="#" class="tag">Power BI</a>
+                <a href="#" class="tag">Azure</a>
+                <a href="#" class="tag">CRM</a>
+                <a href="#" class="tag">ERP</a>
+                <a href="#" class="tag">Business Intelligence</a>
+                <a href="#" class="tag">Cloud Computing</a>
+                <a href="#" class="tag">Digital Transformation</a>
+                <a href="#" class="tag">Data Analytics</a>
+                <a href="#" class="tag">Microsoft Partner</a>
+                <a href="#" class="tag">Implementation</a>
+              </div>
+            </div>
+
+            <!-- Newsletter Widget -->
+            <div class="sidebar-widget newsletter-widget">
+              <h4>Newsletter</h4>
+              <p>
+                Dapatkan berita terbaru seputar teknologi Microsoft langsung ke
+                email Anda.
+              </p>
+              <form class="newsletter-form">
+                <input
+                  type="email"
+                  placeholder="Masukkan email Anda"
+                  class="newsletter-input"
+                  required
+                />
+                <button type="submit" class="newsletter-btn">
+                  Berlangganan
+                </button>
+              </form>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <!-- CTA Section -->
+    <section class="news-cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Butuh Konsultasi Teknologi?</h2>
+          <p>
+            Tim ahli kami siap membantu Anda menemukan solusi teknologi terbaik
+            untuk bisnis Anda.
+          </p>
+          <a href="contact.html" class="btn btn-primary"
+            >Hubungi Kami Sekarang</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Produk</h4>
+            <ul>
+              <li><a href="#">Dynamics 365 F&O</a></li>
+              <li><a href="#">Business Central</a></li>
+              <li><a href="#">Power BI</a></li>
+              <li><a href="#">Dynamics 365 Sales</a></li>
+              <li><a href="#">Dynamics 365 Marketing</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Layanan</h4>
+            <ul>
+              <li><a href="#">Customer Service</a></li>
+              <li><a href="#">Field Service</a></li>
+              <li><a href="#">Commerce</a></li>
+              <li><a href="#">HR & Payroll</a></li>
+              <li><a href="#">Business Intelligence</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Perusahaan</h4>
+            <ul>
+              <li><a href="#">Tentang Kami</a></li>
+              <li><a href="#">Klien Kami</a></li>
+              <li><a href="#">Berita Terbaru</a></li>
+              <li><a href="#">Karir</a></li>
+              <li><a href="#">Kontak</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Mitra</h4>
+            <ul>
+              <li><a href="#">Microsoft</a></li>
+              <li><a href="#">Hitachi</a></li>
+              <li><a href="#">NTT Communications</a></li>
+              <li><a href="#">NS Solutions</a></li>
+              <li><a href="#">Sakura System</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-left">
+            <p>© 2024 PT Dinamika Solusi Informatika. Semua hak dilindungi.</p>
+          </div>
+          <div class="footer-bottom-right">
+            <a href="#">Privasi</a>
+            <a href="#">Syarat Penggunaan</a>
+            <a href="#">Peta Situs</a>
+            <a href="#">Hubungi Kami</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
